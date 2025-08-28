@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Google Web Designer 16.4.0.0711">
+  <meta name="template" content="Banner 3.0.0">
+  <meta name="environment" content="gwd-dv360">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="gwdpage_style.css" rel="stylesheet" data-version="13" data-exports-type="gwd-page">
+  <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="14" data-exports-type="gwd-pagedeck">
+  <link href="gwdgooglead_style.css" rel="stylesheet" data-version="9" data-exports-type="gwd-google-ad">
+  <link href="gwdimage_style.css" rel="stylesheet" data-version="17" data-exports-type="gwd-image">
+  <style id="gwd-lightbox-style">
+    .gwd-lightbox { overflow: hidden; }
+  </style>
+  <style id="gwd-text-style">
+    p,h1,h2,h3 { margin: 0; }
+  </style>
+
+  <!-- Injected: gamified banner styles -->
+  <style>
+    gwd-page { display:block; }
+    gwd-page#page1 { width:300px; height:600px; }
+
+    :root{
+      --w:300px; --h:600px; --green:#1ed760; --green2:#9af0b6; --bg:#0b1722; --text:#ecf2f6; --muted:#c2c8d0;
+    }
+    html,body{height:100%}
+    *{box-sizing:border-box}
+    body{margin:0;background:#0d1117;font-family:system-ui,Segoe UI,Roboto,Arial;color:var(--text)}
+    #ad{position:absolute;left:0;top:0;width:var(--w);height:var(--h);overflow:hidden;border-radius:14px;background:url("bg.jpg") no-repeat center center; background-size:cover;border:1px solid rgba(255,255,255,.06);box-shadow:0 16px 50px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.02)}
+
+    .masthead{position:absolute;inset:0 0 auto 0;height:66px;padding:10px 12px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,0))}
+    .crest{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:conic-gradient(from 90deg,var(--green),var(--green2));box-shadow:0 6px 18px rgba(30,215,96,.35),inset 0 0 0 1.5px rgba(0,0,0,.25)}
+    .mh-copy{font-weight:800}.mh-copy .sub{display:block;font-weight:600;font-size:11px;color:var(--muted)}
+    .cta-ghost{border:1px solid rgba(255,255,255,.26);border-radius:999px;padding:7px 10px;font-size:11px}
+
+    .hud{position:absolute;inset:66px 0 auto 0;height:48px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:6px 10px;font-weight:800}
+    .pill{display:inline-grid;grid-auto-flow:column;gap:6px;align-items:center;padding:6px 10px;border-radius:999px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);font-size:12px}
+    .center-msg{text-align:center;font-size:11px;color:var(--muted)}
+
+    .field{position:absolute;inset:114px 0 0 0;display:grid;place-items:end center;perspective:800px}
+    .pitch{position:absolute;inset:auto -40px 0 -40px;height:77%;background:linear-gradient(180deg,rgba(30,215,96,.06),rgba(30,215,96,.0) 50%,rgba(30,215,96,.16)),radial-gradient(120% 120% at 50% 100%,rgba(30,215,96,.12),rgba(0,0,0,0) 60%);border-top:1px dashed rgba(255,255,255,.12);transform-origin:bottom;transform:rotateX(16deg)}
+    .goal{position:absolute;top:28px;left:20px;right:20px;height:70px;border-bottom:3px solid rgba(255,255,255,.8);border-left:2px solid rgba(255,255,255,.3);border-right:2px solid rgba(255,255,255,.3);background:linear-gradient(transparent 12px,rgba(255,255,255,.12) 12px,rgba(255,255,255,.12) 13px,transparent 13px),linear-gradient(90deg,transparent 12px,rgba(255,255,255,.12) 12px,rgba(255,255,255,.12) 13px,transparent 13px);background-size:22px 22px,22px 22px;border-top-left-radius:4px;border-top-right-radius:4px}
+    .keeper{position:absolute;top:62px;width:56px;height:14px;left:22px;background:linear-gradient(180deg,#cde7f9,#9bc9f0);border:1px solid rgba(0,0,0,.2);border-radius:9px;box-shadow:0 2px 8px rgba(0,0,0,.35);transform-origin:50% 50%}
+
+    .ball{position:absolute;bottom:24px;left:calc(50% - 14px);width:28px;height:28px;border-radius:50%;background:radial-gradient(circle at 50% 35%,#fff,#eaeef4 55%,#cfd6df),conic-gradient(from 0deg,#222 0 10deg,#fff 10deg 20deg,#222 20deg 30deg,#fff 30deg 40deg,#222 40deg 50deg,#fff 50deg 60deg,#222 60deg 70deg,#fff 70deg 80deg,#222 80deg 90deg,#fff 90deg 100deg,#222 100deg 110deg,#fff 110deg 360deg);box-shadow:0 4px 10px rgba(0,0,0,.5);transition:transform .15s ease}
+    .ball.golden{background:radial-gradient(circle at 50% 35%,#fff7cc,#ffd84d 55%,#f5b800), conic-gradient(from 0deg,#805e00 0 10deg,#ffe680 10deg 20deg,#805e00 20deg 30deg,#ffe680 30deg 40deg,#805e00 40deg 50deg,#ffe680 50deg 60deg,#805e00 60deg 70deg,#ffe680 70deg 80deg,#805e00 80deg 90deg,#ffe680 90deg 100deg,#805e00 100deg 110deg,#ffe680 110deg 360deg); box-shadow:0 0 12px rgba(255,216,77,.65)}
+    .ball:active{transform:scale(.96)}
+
+    .aim{position:absolute;width:62px;height:30px;border:1px dashed rgba(255,255,255,.25);border-radius:12px;pointer-events:none;opacity:0;transition:opacity .2s}
+    .corner{position:absolute;width:36px;height:22px;border:1px solid rgba(255,255,255,.2);border-radius:8px;top:34px;opacity:.6}
+    .corner.left{left:26px}
+    .corner.right{right:26px}
+
+    .flash{position:absolute;inset:0;display:grid;place-items:center;font-weight:900;font-size:20px;letter-spacing:1px;opacity:0;pointer-events:none;text-shadow:0 2px 0 rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.5)}
+    .flash.show{animation:flash .66s ease}
+    @keyframes flash{0%{opacity:0;transform:translateY(8px) scale(.96)}15%{opacity:1;transform:translateY(0) scale(1)}70%{opacity:1}100%{opacity:0;transform:translateY(-6px) scale(.98)}}
+    .flash.goal{color:var(--green)}.flash.miss{color:#ff6b6b}
+
+    .overlay{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.65))}
+    .card{width:88%;max-width:268px;border-radius:16px;padding:16px;background:rgba(10,18,28,.95);border:1px solid rgba(255,255,255,.08);box-shadow:0 18px 60px rgba(0,0,0,.5);text-align:center}
+    .card h1{margin:2px 0 6px;font-size:18px}.card p{margin:6px 0 10px;font-size:12px;color:var(--muted)}
+    .button{display:inline-block;padding:10px 14px;border-radius:999px;background:var(--green);color:#08141f;font-weight:800;font-size:12px;text-decoration:none;cursor:pointer;box-shadow:0 8px 28px rgba(30,215,96,.35);border:0}
+    .button.secondary{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.22)}
+    .small{font-size:11px;color:var(--muted)}.hidden{display:none!important}
+    .pulsate{animation:pulsate 1.4s ease-in-out infinite}
+    @keyframes pulsate{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(30,215,96,.35)}50%{transform:scale(1.03);box-shadow:0 0 0 12px rgba(30,215,96,0)}}
+
+    .powerWrap{position:absolute;bottom:86px;left:50%;transform:translateX(-50%);width:160px;height:16px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.35);overflow:hidden;box-shadow:inset 0 0 8px rgba(255,255,255,.06)}
+    .powerZones{position:absolute;inset:0;display:grid;grid-template-columns:30% 40% 30%}
+    .zlow{background:linear-gradient(90deg,#a22,#c44)} .zmid{background:linear-gradient(90deg,#b8841a,#d0a531)} .zhigh{background:linear-gradient(90deg,#7ccc98,#35d07e)}
+    .powerFill{position:absolute;inset:0;height:100%;width:0%;background:rgba(255,255,255,.18);mix-blend-mode:overlay}
+    .powerLabel{position:absolute;bottom:104px;left:50%;transform:translateX(-50%);font-size:10px;color:var(--muted)}
+    .chip{position:absolute;bottom:62px;left:50%;transform:translateX(-50%);font-size:11px;color:#222;background:var(--green);padding:6px 10px;border-radius:999px;font-weight:800;box-shadow:0 10px 26px rgba(30,215,96,.45)}
+
+    .spark{position:absolute;width:2px;height:2px;background:white;border-radius:1px;opacity:0;pointer-events:none}
+    .masthead .logo { height:32px; }
+
+  </style>
+
+  <script>window.clickTag=window.clickTag||"https://www.starhub.com/personal/bundles/premier-league.html";</script>
+
+  <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
+  <script data-source="gwdpage_min.js" data-version="13" data-exports-type="gwd-page" src="gwdpage_min.js"></script>
+  <script data-source="gwdpagedeck_min.js" data-version="14" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script>
+  <script data-source="https://s0.2mdn.net/ads/studio/Enabler.js" data-exports-type="gwd-google-ad" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <script data-source="gwdgooglead_min.js" data-version="9" data-exports-type="gwd-google-ad" src="gwdgooglead_min.js"></script>
+  <script data-source="gwdimage_min.js" data-version="17" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
+</head>
+
+<body>
+  <gwd-google-ad id="gwd-ad" polite-load="">
+    <gwd-metric-configuration></gwd-metric-configuration>
+    <gwd-pagedeck class="gwd-page-container" id="pagedeck">
+      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox" data-gwd-width="300px" data-gwd-height="600px">
+        <div class="gwd-page-content gwd-page-size">
+          <!-- Injected: gamified banner markup -->
+          <div id="ad" aria-label="StarHub Premier League Mini Game">
+            <div class="masthead">
+              <img src="Starhub Logo.svg" alt="StarHub" class="logo">
+              <div class="mh-copy"> Premier League is back!<span class="sub"> Hold power, aim corners</span></div>
+            
+            </div>
+
+            <div class="hud">
+              <div class="pill" aria-live="polite">⏱️ <span id="timer">10</span>s</div>
+              <div class="center-msg">Score 5 to win</div>
+              <div class="pill">⚽ <span id="score">0</span><span id="streak" style="margin-left:6px;color:#ffd84d;"></span></div>
+            </div>
+
+            <div class="field" id="field">
+              <div class="goal" id="goal"></div>
+              <div class="corner left"></div>
+              <div class="corner right"></div>
+              <div class="keeper" id="keeper" aria-hidden="true"></div>
+              <div class="pitch"></div>
+              <div class="ball pulsate" id="ball" aria-label="Hold then release to shoot"></div>
+              <div class="aim" id="aim"></div>
+              <div class="flash" id="flashGoal">GOAL!</div>
+              <div class="flash miss" id="flashMiss">SAVED!</div>
+              <div class="powerWrap hidden" id="powerWrap">
+                <div class="powerZones"><div class="zlow"></div><div class="zmid"></div><div class="zhigh"></div></div>
+                <div class="powerFill" id="powerFill"></div>
+              </div>
+              <div class="powerLabel hidden" id="powerLabel">Hold to power…</div>
+              <div class="chip hidden" id="chip">Golden Ball in 3…</div>
+            </div>
+
+            <div class="overlay" id="start">
+              <div class="card">
+                <h1>Premier League Kick-off</h1>
+                <p>Hit the <b>green power zone</b>, aim for <b>corners</b> to beat the keeper.<br/>Golden Ball = <b>+2 goals</b>.</p>
+                <button class="button" id="btnStart">Start Match</button>
+                <div class="small" style="margin-top:8px;">Tip: High power curves the shot.</div>
+              </div>
+            </div>
+
+            <div class="overlay hidden" id="end">
+              <div class="card">
+                <h1 id="resultTitle">YOU WIN</h1>
+                <p id="resultCopy">Catch every match with StarHub Premier League.</p>
+                <div style="display:grid;gap:8px;margin-top:8px;">
+                  <a class="button" id="btnCTA" href="#" rel="noopener" target="_blank">Get StarHub Premier League</a>
+                  <button class="button secondary" id="btnReplay">Replay</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Injected -->
+        </div>
+      </gwd-page>
+    </gwd-pagedeck>
+  </gwd-google-ad>
+
+  <!-- Init + Game logic -->
+  <script type="text/javascript" id="gwd-init-code">
+    (function() {
+      var gwdAd = document.getElementById('gwd-ad');
+      function handleWebComponentsReady(event) {
+        requestAnimationFrame(function() { setTimeout(function() { gwdAd.initAd(); }, 1); });
+      }
+      window.addEventListener('WebComponentsReady', handleWebComponentsReady, false);
+    })();
+  </script>
+
+  <script>
+  (function(){
+    const ball = document.getElementById('ball');
+    const keeper = document.getElementById('keeper');
+    const aim = document.getElementById('aim');
+    const timerEl = document.getElementById('timer');
+    const scoreEl = document.getElementById('score');
+    const streakEl = document.getElementById('streak');
+    const flashGoal = document.getElementById('flashGoal');
+    const flashMiss = document.getElementById('flashMiss');
+    const startOverlay = document.getElementById('start');
+    const endOverlay = document.getElementById('end');
+    const btnStart = document.getElementById('btnStart');
+    const btnCTA = document.getElementById('btnCTA');
+    const btnReplay = document.getElementById('btnReplay');
+    const field = document.getElementById('field');
+    const powerWrap = document.getElementById('powerWrap');
+    const powerFill = document.getElementById('powerFill');
+    const powerLabel = document.getElementById('powerLabel');
+    const chip = document.getElementById('chip');
+
+    let playing=false, timer=10, score=0, keeperDir=1, keeperX=22, keeperWidth=56;
+    let powering=false, power=0, powerLoopDir=1, canShoot=true;
+    let lastFrame=performance.now();
+    let streak=0, goldenActive=false, goldenCountdown=0;
+
+    const goalLeft=20, goalRight=280;
+    const leftCorner=[26, 26+36]; const rightCorner=[300-26-36, 300-26];
+
+    function resetBall(){
+      ball.classList.toggle('golden', goldenActive);
+      ball.style.transition='none'; ball.style.left='calc(50% - 14px)'; ball.style.bottom='24px';
+      requestAnimationFrame(()=>{ ball.offsetHeight; ball.style.transition=''; });
+      canShoot=true; ball.classList.add('pulsate');
+    }
+    function showFlash(el){ el.classList.remove('show'); void el.offsetWidth; el.classList.add('show'); }
+    function updateStreakUI(){ streakEl.textContent = streak>1 ? `×${streak}` : ''; }
+
+    function particles(x, y){
+      for(let i=0;i<6;i++){
+        const s=document.createElement('div');
+        s.className='spark';
+        s.style.left=x+'px'; s.style.top=y+'px'; s.style.opacity='1';
+        const dx=(Math.random()*2-1)*40, dy=-Math.random()*28-8;
+        s.style.transition='transform .5s ease, opacity .5s ease';
+        field.appendChild(s);
+        requestAnimationFrame(()=>{
+          s.style.transform=`translate(${dx}px, ${dy}px)`; s.style.opacity='0';
+        });
+        setTimeout(()=>s.remove(),520);
+      }
+    }
+
+    function moveKeeper(dt){
+      const base = 62 + (score*4) + (streak*2);
+      let targetBias = 0;
+      if(powering && aim.style.opacity==='1'){
+        const aimLeft = parseFloat(aim.style.left||'0')+31;
+        const center = Math.max(goalLeft+6, Math.min(goalRight-6, aimLeft));
+        targetBias = (center - (keeperX+keeperWidth/2)) * 0.024;
+      }
+      keeperX += (keeperDir*base + targetBias) * (dt/1000);
+      if(keeperX < goalLeft+6){ keeperX=goalLeft+6; keeperDir=1; }
+      if(keeperX + keeperWidth > goalRight-6){ keeperX=goalRight-6-keeperWidth; keeperDir=-1; }
+      keeper.style.left = keeperX+'px';
+      keeper.style.transform = `rotate(${keeperDir*2}deg)`;
+    }
+
+    function tick(now){
+      const dt = now - lastFrame; lastFrame = now;
+      if(playing){
+        moveKeeper(dt);
+        updatePower(dt);
+        goldenCountdown -= dt/1000;
+        if(!goldenActive && goldenCountdown<=0){
+          goldenActive=true;
+          chip.textContent='GOLDEN BALL! +2';
+          chip.classList.remove('hidden');
+          setTimeout(()=>chip.classList.add('hidden'), 1400);
+          resetBall();
+          goldenCountdown = 8 + Math.random()*2;
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+
+    function startGame(){
+      playing=true; timer=5; score=0; streak=0; updateStreakUI();
+      goldenActive=false; goldenCountdown = 5;
+      timerEl.textContent=timer; scoreEl.textContent=score;
+      startOverlay.classList.add('hidden'); endOverlay.classList.add('hidden');
+      resetBall(); lastFrame=performance.now(); countdown();
+    }
+    function endGame(){
+      playing=false;
+      const win = score>=5;
+      document.getElementById('resultTitle').textContent = win?'YOU WIN':'YOU LOSE';
+      document.getElementById('resultTitle').style.color = win?'var(--green)':'#ff6b6b';
+      document.getElementById('resultCopy').textContent = 'Catch every match with StarHub Premier League.';
+      endOverlay.classList.remove('hidden');
+    }
+    function countdown(){
+      if(!playing) return;
+      timerEl.textContent = timer;
+      if(timer<=0){ endGame(); return; }
+      setTimeout(()=>{ timer--; countdown(); },1000);
+    }
+
+    function updatePower(dt){
+      if(!powering) return;
+      power += powerLoopDir * dt * 0.12;
+      if(power>=1){ power=1; powerLoopDir=-1; }
+      if(power<=0){ power=0; powerLoopDir=1; }
+      powerFill.style.width = Math.round(power*100)+'%';
+    }
+
+    function inCorner(x){
+      return (x>=leftCorner[0] && x<=leftCorner[1]) || (x>=rightCorner[0] && x<=rightCorner[1]);
+    }
+
+    function shoot(targetX){
+      if(!playing || !canShoot) return;
+      canShoot=false; ball.classList.remove('pulsate');
+      powerWrap.classList.add('hidden'); powerLabel.classList.add('hidden');
+
+      const clamped = Math.max(goalLeft+10, Math.min(goalRight-10, targetX));
+      const sweet = (power>=0.6 && power<=0.95);
+      const corner = inCorner(clamped);
+
+      const travelMs = 580 - Math.round(320*power);
+      const curve = (clamped < 150 ? -1 : 1) * (8 + 28*power);
+      const reactionDelay = 140 + (1-power)*180;
+
+      setTimeout(()=>{
+        const rect = field.getBoundingClientRect();
+        particles(rect.width/2, rect.height-90);
+      }, 80);
+
+      ball.style.transition = `left ${travelMs}ms cubic-bezier(.2,.8,.2,1), bottom ${travelMs}ms cubic-bezier(.2,.8,.2,1)`;
+      ball.style.left = (clamped-14 + curve)+'px';
+      ball.style.bottom = '132px';
+
+      setTimeout(()=>{
+        const targetCenter = clamped;
+        const centerNow = keeperX + keeperWidth/2;
+        keeperDir = (targetCenter>centerNow) ? 1 : -1;
+      }, reactionDelay);
+
+      setTimeout(()=>{
+        const keeperLeft = keeperX;
+        const keeperRight = keeperX + keeperWidth;
+        const padding = (corner?10:0) + (sweet?10:0);
+        const overlap = (clamped >= keeperLeft-padding && clamped <= keeperRight+padding);
+
+        if(overlap){
+          streak=0; updateStreakUI();
+          showFlash(flashMiss);
+        } else {
+          const add = goldenActive ? 2 : 1;
+          score += add; scoreEl.textContent = score;
+          streak = Math.min(5, streak+1); updateStreakUI();
+          showFlash(flashGoal);
+        }
+        goldenActive=false;
+        setTimeout(resetBall, 350);
+      }, travelMs);
+    }
+
+    // Aim & power handling
+    field.addEventListener('mousemove',(e)=>{
+      const rect = field.getBoundingClientRect();
+      const x = e.clientX - rect.left; const y = e.clientY - rect.top;
+      if(y < rect.height*0.45){ aim.style.opacity='1'; aim.style.left=(x-31)+'px'; aim.style.top=(y-15)+'px'; }
+      else{ aim.style.opacity='0'; }
+    });
+
+    function beginPower(e){
+      if(!playing || !canShoot) return;
+      powering=true; power=0; powerLoopDir=1;
+      powerWrap.classList.remove('hidden'); powerLabel.classList.remove('hidden');
+    }
+    function releasePower(e){
+      if(!playing || !canShoot) return;
+      powering=false;
+      const rect = field.getBoundingClientRect();
+      const x = (e && e.clientX) ? (e.clientX - rect.left) : rect.width/2;
+      shoot(x);
+    }
+
+    document.addEventListener('mousedown', (ev)=>{
+      const target = ev.target;
+      if(target.closest && (target.closest('#field') || target.closest('#ball'))) beginPower(ev);
+    });
+    window.addEventListener('mouseup', releasePower);
+
+    document.addEventListener('touchstart',(e)=>{
+      const t=e.touches[0];
+      beginPower(t);
+    }, {passive:true});
+    window.addEventListener('touchend',(e)=>{ if(powering){ powering=false; } });
+    document.addEventListener('touchend',(e)=>{
+      const rect = field.getBoundingClientRect();
+      const touch = (e.changedTouches&&e.changedTouches[0])||null;
+      if(touch){ releasePower({clientX:touch.clientX}); }
+    });
+
+    // Buttons and DV360 exit
+    btnStart.addEventListener('click',(e)=>{ e.stopPropagation(); startGame(); });
+    btnReplay.addEventListener('click',(e)=>{ e.stopPropagation(); startGame(); });
+    btnCTA.addEventListener('click',(e)=>{
+      e.preventDefault(); e.stopPropagation();
+      try {
+        if (window.gwd && gwd.actions && gwd.actions.events && gwd.actions.events.startExit) {
+          gwd.actions.events.startExit('gwd-ad','Default Exit', window.clickTag);
+        } else {
+          window.open(window.clickTag,'_blank');
+        }
+      } catch(err){ window.open(window.clickTag,'_blank'); }
+    });
+
+    requestAnimationFrame((t)=>{ lastFrame=t; requestAnimationFrame(tick); });
+  })();
+  </script>
+</body>
+</html>
